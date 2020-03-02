@@ -1,1 +1,3 @@
-# WeChatLittleApp
+## 微信小程序小示例
+##### weather：天气查询小程序（实现自动定位功能）
+##### translation：翻译小程序（实现历史记录功能）
