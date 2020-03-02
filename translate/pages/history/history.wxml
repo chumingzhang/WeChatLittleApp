@@ -1,0 +1,13 @@
+<scroll-view scroll-y class="container">
+  <view class="history-list">
+    <view class="header">
+      <text class="title">文本：</text>
+      <text bindtap='onClearHistory' class="icon-close">清除历史</text>
+    </view>
+     
+    <view class="item" wx:for="{{history}}" wx:key="index" bindtap='onTapItem' data-input="{{item.input}}" data-translation="{{item.translation}}">
+      <view class="query">{{item.input}}</view>
+      <view class="result">{{item.translation}}</view>
+    </view>
+  </view>
+</scroll-view>

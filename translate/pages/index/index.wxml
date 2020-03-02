@@ -1,0 +1,13 @@
+<view class = "cantainer">
+  <picker node = "selector" range = "{{range}}" range-key = "{{'chs'}}" value = "{{index}}" bindchange = "changeTo">翻译为: {{range[index].chs}}</picker>
+
+  <view class = "up">
+    <textarea class="input" placeholder='请输入要翻译的文本' placeholder-style='color: #8995a1'  bindinput='listenerInput' bindconfirm='onConfirm' bindblur='onConfirm' value="{{input}}"/>
+  </view>
+
+  <button size = "mini" bindtap = "translate">翻译</button>
+  
+  <view class = "down">
+    <text>{{translation}}</text>
+  </view>
+</view>
